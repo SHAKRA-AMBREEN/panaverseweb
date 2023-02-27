@@ -13,6 +13,8 @@ import React from "react";
 import Header from "../components/Header";
 import Home from "../components/Home";
 import Instructors from "../components/Instructors";
+import { RevealList } from  'next-reveal'
+import { RevealWrapper } from "next-reveal";
 
 export default function page() {
   return (
@@ -31,9 +33,18 @@ export default function page() {
             display={{ lg: "flex", base: "grid" }}
           >
             <Box flexBasis="50%">
+            <RevealWrapper
+                origin="left"
+                delay={200}
+                duration={1000}
+                distance="500px"
+                reset={true}
+              >
               <Image mx="auto" src="/president.png" alt="presidentimage" />
+              </RevealWrapper>
             </Box>
             <Box flexBasis="50%">
+            <RevealList interval={60} delay={500} className='flex flex-wrap items-center justify-center'>
               <Heading>Dr. Arif Alvi</Heading>
               <Text mt={5}>
                 Dr. Arif Alvi was sworn in as the 13th President of Islamic
@@ -65,6 +76,7 @@ export default function page() {
                 {" "}
                 More Info{" "}
               </Button>
+              </RevealList>
             </Box>
           </Flex>
         </Container>
@@ -78,6 +90,7 @@ export default function page() {
             display={{ lg: "flex", base: "grid" }}
           >
             <Box flexBasis="50%">
+            <RevealList interval={60} delay={500} className='flex flex-wrap items-center justify-center'>
               <Heading size="2xl">Panaverse DAO</Heading>
               <Text mt={5}>
                 Panaverse DAO is a community of Web 3 and Metaverse developers,
@@ -102,9 +115,17 @@ export default function page() {
                 {" "}
                 More Info{" "}
               </Button>
+              </RevealList>
             </Box>
 
             <Box flexBasis="50%" m="auto">
+            <RevealWrapper
+                origin="right"
+                delay={200}
+                duration={1000}
+                distance="500px"
+                reset={true}
+              >
               <Image
                 my={{ lg: "0", base: "10%" }}
                 mx="auto"
@@ -113,6 +134,7 @@ export default function page() {
                 width={{ lg: "400", base: "200" }}
                 height={{ lg: "250", base: "150" }}
               />
+              </RevealWrapper>
             </Box>
           </Flex>
         </Container>
@@ -127,9 +149,18 @@ export default function page() {
             display={{ lg: "flex", base: "grid" }}
           >
             <Box flexBasis="50%">
+            <RevealWrapper
+                origin="left"
+                delay={200}
+                duration={1000}
+                distance="500px"
+                reset={true}
+              >
               <Image mx="auto" mt={"50px"} src="/sir Zia.webp" alt="sir zia image" />
+              </RevealWrapper>
             </Box>
             <Box flexBasis="50%">
+            <RevealList interval={60} delay={500} className='flex flex-wrap items-center justify-center'>
               <Heading>Zia Khan</Heading>
               <Text mt={5}>
                 CEO of Panacloud, the world’s first Integrated API Ownership
@@ -159,6 +190,7 @@ export default function page() {
                 {" "}
                 More Info{" "}
               </Button>
+              </RevealList>
             </Box>
           </Flex>
         </Container>
