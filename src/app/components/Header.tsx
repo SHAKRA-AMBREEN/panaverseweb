@@ -11,7 +11,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
 import Image from "next/image";
-import logo from "../../../public/logo/weblogo.png";
+import logo from "../../../public/weblogo.png";
 import Link from "next/link";
 
 export default function Header() {
@@ -31,7 +31,7 @@ export default function Header() {
             <Flex
               display={{ lg: "flex", base: "none" }}
               color="black"
-              // placeItems="center"
+              placeItems="center"
               fontSize={18}
               fontWeight="semibold"
               gap={10}
